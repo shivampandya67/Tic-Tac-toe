@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    background-color:#B8BAC8;
+}
+
+.container{
+    background: #e5e5e5;
+    margin: 70px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.status-reset{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: center;
+}
+.back{
+
+}
+.status{
+    font-size: 20px;
+    color:#6BE2F9;
+    font-weight: bold;
+    float: right;
+}
+.reset{
+    
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px;
+    
+   
+}
+
+.reset:hover{
+    color: white;
+    background: #A063DD;
+}
+
+.grids{
+    background: #B8BAC8;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/*1fr means 3 parts of equal size in available width*/
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+.cells{
+
+    border-radius: 2px;
+    height: 130px;
+    width: 160px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.X::after{
+    content: 'X';
+    font-size: 100px;
+    color: #6BE2F9;
+}
+.O::after{
+    content: 'O';
+    font-size: 100px;
+    color: #A063DD;
+}
+.blank::after{
+    content: Null;
+}
+.red{
+    color: red;
+}
+.orange{
+    color: #6BE2F9;
+}
+.navy{
+    color: #A063DD;
+}
